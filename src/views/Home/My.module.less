@@ -1,0 +1,90 @@
+.my_container{
+    width: 100%;
+    position: relative;
+    top: 0;
+    .header{
+        background-color: #2ed295;
+        height: 200px;
+        width: 100%;
+        z-index: -1;
+        top: 0;
+    }
+    .userBox{
+        background-color: aliceblue;
+        width: 85%;
+        margin: 0 auto;
+        box-shadow: 2px 2px 2px #bbb;
+        margin-top: -100px;
+        padding: 10px;
+        >ul{
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .userBoxFirst{
+            >li:first-child{
+                padding-right: 10px;
+            }
+            >li:nth-child(2){
+                margin-right: 10px;
+            }
+            >li{
+                display: inline-block;
+                text-align: left;
+                >p{
+                    margin: 0;
+                    padding: 5px 0;
+                    font-size: 0.8rem;
+                }
+                >p:first-child{
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                }
+                .imgs{
+                    width: 80px;
+                    height: 80px;
+                    background-image: url('https://zos.alipayobjects.com/rmsportal/PZUUCKTRIHWiZSY.jpeg');
+                    background-position: center;
+                    background-size: contain;
+                    border-radius: 50%;
+                }
+            }
+            .btn{
+                background-color: #4e6dc8;
+                color: #fff;
+                padding: 5px;
+                box-shadow: 2px 3px 1px #072275;
+            }
+        }
+        .list{
+            >li{
+                display: inline-block;
+                padding: 5px;
+            }
+        }  
+    }
+    .listTap{
+        padding: 0 10px;
+        background-color: #fff ;
+    }
+    .listTac{
+        width: 100%;
+        background-color: #fff ;
+        >ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            >li{
+                display: flex;
+                padding: 0.5rem;
+                line-height: 2rem;
+                border-bottom: 0.5px solid #ddd;
+                >div:first-child{
+                    width: 95%;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
